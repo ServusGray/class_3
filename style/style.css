@@ -1,0 +1,86 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	/*font: 14px 'Times New Roman', Times, sans-serif;*/
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.container {
+	width: 800px;
+	height: 588px;
+	margin: 0 auto;
+	border: 1px solid red;
+	background: #222 url(img/header-bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	margin-top: 67px;
+	height: 44px;
+	width: 109px;
+}
+
+.main-menu {
+	margin: 47px auto;
+	height: 9px;
+	width: 350px;
+}
+.main-menu li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+.title-butt {
+	text-align: center;
+}
+
+.title-butt {
+	text-transform: uppercase;
+	color: white;
+}
+
+.title-butt h1 {
+	font: 30px Arial, sans-serif;
+}
+
+.copy-on {
+	background-color: #4bc8b6;
+	text-transform: uppercase;
+	color: white;
+	border: none;
+	border-radius: 30px;
+	height: 46px;
+	width: 236px;
+	font-weight: bold;
+}
+
+h3::before {
+	content: url(/img/line.png);
+	border: 1px solid red;
+	height: 100%;
+	width: 100%;
+}
+
+h3::after {
+	content: url(/img/line.png);
+	border: 1px solid red;
+	height: 100%;
+	width: 100%;
+}
