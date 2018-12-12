@@ -7,11 +7,6 @@ html {
 	height: 100%;
 }
 
-body {
-	height: 100%;
-	/*font: 14px 'Times New Roman', Times, sans-serif;*/
-}
-
 a {
 	text-decoration: none;
 	color: white;
@@ -21,13 +16,16 @@ a {
 	width: 800px;
 	height: 588px;
 	margin: 0 auto;
-	border: 1px solid red;
-	background: #222 url(img/header-bg.jpg) no-repeat;
+	background-color: #222 ;
+}
+
+.logo-cont {
+	background: url(../img/header-bg.jpg) no-repeat;
 	background-size: cover;
 }
 
 .logo {
-	margin-top: 67px;
+	padding-top: 67px;
 	height: 44px;
 	width: 109px;
 }
@@ -49,15 +47,12 @@ a {
 
 .title-butt {
 	text-align: center;
-}
-
-.title-butt {
 	text-transform: uppercase;
 	color: white;
 }
 
 .title-butt h1 {
-	font: 30px Arial, sans-serif;
+	font: 53px Ubuntu, bold;
 }
 
 .copy-on {
@@ -67,20 +62,73 @@ a {
 	border: none;
 	border-radius: 30px;
 	height: 46px;
-	width: 236px;
+	min-width: 236px;
 	font-weight: bold;
+	margin-top: 83px;
 }
 
-h3::before {
-	content: url(/img/line.png);
+.title-butt h3 {
+	margin-top: 42px;
+}
+
+.title-butt-decor > h3 {
+	position: relative;
+	display: inline-block;
+}
+
+.title-butt-decor > h3:before,
+.title-butt-decor > h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	height: 2px;
+	width: 45%;
+	background: #336666;
+}
+
+.title-butt-decor > h3:before {
+	right: 100%;
+	margin-right: 20px;
+}
+
+.title-butt-decor > h3:after {
+	left: 100%;
+	margin-left: 20px;
+}
+
+/*h3::before {
+	content: url ("img/line.png");
 	border: 1px solid red;
 	height: 100%;
 	width: 100%;
 }
 
 h3::after {
-	content: url(/img/line.png);
+	content: url ("img/line.png");
 	border: 1px solid red;
 	height: 100%;
 	width: 100%;
+}*/
+
+.features-container {
+	width: 800px;
+	height: 286px;
+	margin: 0 auto;
+	border: 1px solid pink;
+	background: #fff;
+}
+
+.features-item-section {
+	display: inline-block;
+    padding-left: 5px;
+	padding-right: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.features-item {
+	float: left;
+	width: 33.33%;
+	text-align: center;
 }
